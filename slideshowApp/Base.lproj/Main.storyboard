@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,48 +19,49 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tvv-It-oX1">
-                                <rect key="frame" x="66" y="70" width="243" height="180"/>
+                                <rect key="frame" x="70" y="70" width="428" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="ElL-e5-Epn"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzF-gB-DGO">
-                                <rect key="frame" x="66" y="50" width="243" height="180"/>
+                                <rect key="frame" x="70" y="50" width="428" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="0HC-KS-Jcg"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="180" id="cx3-b5-WTa"/>
                                 </constraints>
                                 <connections>
+                                    <action selector="warpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obw-dh-Fcm"/>
                                     <segue destination="45E-TH-oyo" kind="show" id="Ze1-6T-Uxk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJ0-bN-uDP">
-                                <rect key="frame" x="66" y="587" width="31" height="30"/>
+                                <rect key="frame" x="70" y="240" width="31" height="30"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
                                     <action selector="forwardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HEi-kM-irz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlX-DV-uOl">
-                                <rect key="frame" x="127" y="587" width="31" height="30"/>
+                                <rect key="frame" x="131" y="240" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P9v-EA-YOi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9a-4m-wA7">
-                                <rect key="frame" x="278" y="587" width="31" height="30"/>
+                                <rect key="frame" x="467" y="240" width="31" height="30"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
                                     <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZOi-3W-YEe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG7-7O-L8I">
-                                <rect key="frame" x="278" y="587" width="31" height="30"/>
+                                <rect key="frame" x="467" y="240" width="31" height="30"/>
                                 <state key="normal" title="停止"/>
                                 <connections>
                                     <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BVd-cx-GOg"/>
@@ -106,17 +107,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wGk-AH-UNA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zUX-FU-TAS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wbL-IJ-N7i">
-                                <rect key="frame" x="26" y="45" width="323" height="442"/>
+                                <rect key="frame" x="30" y="45" width="508" height="95"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="3" id="YHj-nA-tYo"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBk-CS-2vw">
-                                <rect key="frame" x="146" y="587" width="83" height="40"/>
+                                <rect key="frame" x="120" y="240" width="328" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="KKz-nI-IRe"/>
                                 </constraints>
@@ -129,12 +130,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WBk-CS-2vw" firstAttribute="leading" secondItem="zUX-FU-TAS" secondAttribute="leadingMargin" constant="130" id="2j4-Ds-bbq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wbL-IJ-N7i" secondAttribute="trailing" constant="10" id="6pg-qB-gNX"/>
                             <constraint firstItem="wbL-IJ-N7i" firstAttribute="leading" secondItem="zUX-FU-TAS" secondAttribute="leadingMargin" constant="10" id="8XA-9Z-n2P"/>
                             <constraint firstItem="wGk-AH-UNA" firstAttribute="top" secondItem="WBk-CS-2vw" secondAttribute="bottom" constant="40" id="GuD-Av-HCo"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WBk-CS-2vw" secondAttribute="trailing" constant="130" id="KL4-Ol-VRt"/>
+                            <constraint firstItem="WBk-CS-2vw" firstAttribute="leading" secondItem="zUX-FU-TAS" secondAttribute="leadingMargin" constant="100" id="UXY-gO-ASm"/>
                             <constraint firstItem="wbL-IJ-N7i" firstAttribute="top" secondItem="E08-6g-apf" secondAttribute="bottom" constant="25" id="dt4-vz-Zag"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WBk-CS-2vw" secondAttribute="trailing" constant="100" id="nWD-JO-uvH"/>
                             <constraint firstItem="WBk-CS-2vw" firstAttribute="top" secondItem="wbL-IJ-N7i" secondAttribute="bottom" constant="100" id="yPU-CN-paH"/>
                         </constraints>
                     </view>

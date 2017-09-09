@@ -39,18 +39,33 @@ class ViewController: UIViewController {
         
     }
    
-   
-    
-
+    @IBOutlet weak var forwardButton2: UIButton!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var stopButton2: UIButton!
+    @IBOutlet weak var playButton: UIButton!
     
     
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBAction func warpButton(_ sender: Any) {
+        if playButton.isEnabled==false {
+            
+            self.timer.invalidate()
+            self.timer=nil
+
+        }
+        
+        
+        playButton.isEnabled=true
+        forwardButton2.isEnabled=true
+        backButton.isEnabled=true
+        stopButton2.isEnabled=false
+    }
     let imageNames: [String]=["IMG_0234.jpg","IMG_0236.jpg","IMG_0239.jpg"];
     
     var index: Int=0
     
-    @IBOutlet weak var forwardButton2: UIButton!
+    
     @IBAction func forwardButton(_ sender: Any) {
         index += 1
         if index>imageNames.count-1{
@@ -69,9 +84,9 @@ class ViewController: UIViewController {
         imageView.image=UIImage(named: imageNames[index] )
     }
     
-    @IBOutlet weak var backButton: UIButton!
     
-    @IBOutlet weak var stopButton2: UIButton!
+    
+    
     
     @IBAction func stopButton(_ sender: Any) {
         self.timer.invalidate()
@@ -81,7 +96,7 @@ class ViewController: UIViewController {
         backButton.isEnabled=true
         stopButton2.isEnabled=false
     }
-    @IBOutlet weak var playButton: UIButton!
+    
     @IBAction func playButton(_ sender: Any) {
         self.timer=Timer.scheduledTimer(timeInterval: 2,target: self,selector: #selector(forwardButton),userInfo: nil, repeats: true)
         playButton.isEnabled=false
